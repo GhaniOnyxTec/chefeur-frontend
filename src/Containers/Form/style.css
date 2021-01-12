@@ -1,0 +1,22 @@
+.jumb{
+    width: 60%;
+    margin: auto;
+    align-content: center;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.lab{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 120px;
+}
+
+.opt{
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    /* padding-left: 120px; */
+}
