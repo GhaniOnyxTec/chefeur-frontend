@@ -4,11 +4,13 @@ import Layout from "../../Components/Layout";
 import "./style.css";
 import Learn_n_Draw from "../../assets/undraw_online_groceries_a02y.svg";
 import Celebration from "../../assets/undraw_celebration_0jvk.svg";
+import banner1 from "../../assets/2102.jpg";
 import Personalization from "../../assets/undraw_survey_05s5.svg";
 import Savings from "../../assets/undraw_Savings_re_eq4w.svg";
 import Clock from "../../assets/undraw_time_management_30iu.svg";
 import Cooking from "../../assets/undraw_cooking_lyxy.svg";
 import Forms from "../../assets/undraw_shopping_app_flsj.svg";
+import { NavLink } from "react-router-dom";
 
 /**
  * @author
@@ -17,9 +19,9 @@ import Forms from "../../assets/undraw_shopping_app_flsj.svg";
 
 const Home = (props) => {
   return (
-    <Layout>
-      <Jumbotron>
-        <img src="" />
+    <Layout className="pageContainer" >
+      <Jumbotron style={{margin: '20px 20px 20px 20px',padding:'0px' }} >
+        <img src={banner1} style={{ width:'100%', height:'400px' }} />
       </Jumbotron>
       <Container className="landing-page" fluid>
         <Row
@@ -190,14 +192,14 @@ const Home = (props) => {
           </Col>
         </Row>
       </Container>
-      <Jumbotron style={{borderRadius: '13em/3em'}}>
+      <Jumbotron style={{borderRadius: '10em/3em' }}>
           <Row className='justify-content-md-center'>
           <p>
            Ready to build your own personalized grocery order?
           </p>
           </Row>
           <Row className='justify-content-md-center'>
-          <Button>Get started today</Button>
+          <NavLink to='/form'><Button>Get Started today</Button></NavLink>
           </Row>
           <br/>
           <Row className='justify-content-md-center'>
